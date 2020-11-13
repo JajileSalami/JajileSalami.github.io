@@ -73,3 +73,18 @@ function drawSkeleton() {
     }
   }
 }
+
+
+function tall() {
+  //window.alert(pose.keypoints[0].position.y)
+  window.alert("functions")
+  //document.getElementById("Yes").innerHTML = "Test";
+  if (pose.keypoints[0].position.y > 50) {
+    window.alert("hi");
+    document.getElementById("Yes").innerHTML = "Yes, you are tall.";
+  }
+  else {
+    window.alert("bye");
+    document.getElementById("Yes").innerHTML = "No, you are short.";
+  }
+}
